@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="S Team Of International (Dev. Shaheen) — Explore every IT career: roles, skills, salaries, growth, responsibilities, and learning paths with a smart search experience." />
+    <meta name="theme-color" content="#0b1220" />
+    <title>S Team Of International (Dev. Shaheen)</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-8sYf0k0z2x2tqZbVQ6l0Kk7m9Q3p9wZQk9OqFJx7Y0m8m8hV7i3qv8XH8m0l1xS3nX1l8m1D5G7Q9Y8yZfQ1Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="theme-dark">
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="./">
+          <span class="brand-logo">S</span>
+          <span class="brand-text">S Team Of International</span>
+          <span class="brand-sub">(Dev. Shaheen)</span>
+        </a>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="icon-btn menu-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="./">Home</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero / Welcome -->
+      <section class="hero container" data-aos="fade-up">
+        <div class="hero-content">
+          <h1>
+            S Team Of International
+            <span class="sub">(Dev. Shaheen)</span>
+          </h1>
+          <p class="lead">Explore the complete universe of IT careers — roles, skills, salaries, growth, responsibilities, and learning paths. Ask anything, search everything.</p>
+
+          <div class="search-box" role="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="globalSearch" type="text" placeholder="Ask about any IT career… e.g., What does a data analyst do?" aria-label="Search IT careers" />
+            <button id="searchBtn" class="btn-primary">Search</button>
+          </div>
+
+          <div class="stats" data-aos="fade-up" data-aos-delay="150">
+            <div class="stat">
+              <span class="num" id="statRoles">0+</span>
+              <span class="label">Career Roles Listed</span>
+            </div>
+            <div class="stat">
+              <span class="num">2025</span>
+              <span class="label">Latest Insights</span>
+            </div>
+            <div class="stat">
+              <span class="num">Global</span>
+              <span class="label">Salary Averages</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search Results / Q&A -->
+      <section class="results container" aria-live="polite" data-aos="fade-up">
+        <h2 class="section-title"><i class="fa-solid fa-robot"></i> Smart Answers</h2>
+        <div id="answers"></div>
+      </section>
+
+      <!-- Trending Carousel -->
+      <section class="trending container" data-aos="fade-up">
+        <div class="section-head">
+          <h2 class="section-title"><i class="fa-solid fa-fire"></i> Top Trending IT Careers</h2>
+          <a class="link" href="careers.html">View all careers</a>
+        </div>
+        <div class="carousel" id="trendingCarousel" tabindex="0" aria-label="Trending careers">
+          <!-- Cards injected by JS -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand-inline">
+            <span class="brand-logo sm">S</span>
+            <span class="brand-text">S Team Of International</span>
+          </div>
+          <p>Helping learners and professionals navigate every IT career path.</p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <div class="socials">
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credits">© 2025 S Team Of International (Dev. Shaheen)</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+  </html>
+
+
